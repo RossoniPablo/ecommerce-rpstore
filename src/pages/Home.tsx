@@ -1,6 +1,8 @@
 // import BannerCarousel from "../components/BannerCarousel";
 import BannerCarousel from "../components/BannerCarousel";
-import Beneficios from "../components/Beneficios";
+import Benefits from "../components/Benefits";
+import BestSellers from "../components/BestSellers";
+import Categories from "../components/Categories";
 import { NavBar } from "../components/NavBar"
 
 
@@ -10,7 +12,9 @@ const Home = () => {
     <div>
       <NavBar />
       <BannerCarousel />
-      <Beneficios />
+      <Benefits />
+      <Categories />
+      <BestSellers />
 
 
     </div >

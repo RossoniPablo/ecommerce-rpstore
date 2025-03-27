@@ -9,9 +9,9 @@ export function NavBar() {
   return (
     <div className="w-full">
 
-      <div className="max-w-7xl mx-auto py-3 flex  justify-between">
+      <div className="w-full lg:max-w-7xl mx-auto py-3 px-4 flex justify-between">
         <div></div>
-        <div className='flex items-center gap-5 text-secondary text-lg'>
+        <div className='flex items-center gap-8 text-secondary text-2xl md:text-sm lg:text-lg '>
           <FontAwesomeIcon icon={faInstagram} className='hover:text-primary' />
           <FontAwesomeIcon icon={faFacebook} className='hover:text-primary' />
           <FontAwesomeIcon icon={faYoutube} className='hover:text-primary' />
@@ -33,8 +33,8 @@ export function NavBar() {
           </div>
 
           <div className='flex gap-5 text-2xl text-primary'>
-            <FontAwesomeIcon icon={faCircleUser} />
             <FontAwesomeIcon icon={faCartShopping} />
+            <FontAwesomeIcon icon={faCircleUser} />
           </div>
 
 
