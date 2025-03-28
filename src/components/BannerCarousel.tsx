@@ -1,40 +1,36 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
+import { Autoplay } from "swiper/modules";
 
+import bannerTeste from "../assets/images/banner/banner-full-1600x450-ia.jpg"
+import bannerTeste2 from "../assets/images/banner/banner-full-1600x450-moletom.jpg"
 
-// import { ReactNode } from "react";
-// import Slider from "react-slick";
-
-// interface BannerCarouselProps {
-//   children: ReactNode; // Especifica que children pode ser qualquer conteúdo React
-// }
-// const BannerCarousel: React.FC<BannerCarouselProps> = ({ children }) => {
-
-//   const settings = {
-//     dots: false,
-//     infinite: true,
-//     speed: 400,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     variableWidth: true,
-//     adaptiveHeight: true,
-//   }
-//   return (
-//     <div>
-//       <Slider {...settings}>
-//         {children}
-//       </Slider>
-//     </div>
-//   )
-// }
-
-
-// export default BannerCarousel;
 
 const BannerCarousel = () => {
   return (
-    <div className="flex items-center justify-center w-full h-60 bg-zinc-300" >
-      <h1 className="">Banners</h1>
-    </div>
+
+    <div className="" >
+      <Swiper
+        slidesPerView={1}
+        modules={[Autoplay]}
+        speed={1000} // Tempo da transição (1s)
+        autoplay={{
+          delay: 3000, // Tempo entre slides (3s)
+          disableOnInteraction: false,
+        }}
+        loop={true}
+      >
+        <SwiperSlide>
+          <img src={bannerTeste} alt="Imagem de um banner" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bannerTeste2} alt="Imagem de um banner" />
+        </SwiperSlide>
+
+
+      </Swiper >
+    </div >
   )
 }
 
